@@ -52,6 +52,7 @@ export default function Home() {
     }
 
     try {
+      // dia ngecall api/contact -> api golang tidak dipanggil secara langsung, tapi lewat api nextjs
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
